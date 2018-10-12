@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.apache.commons.logging_1.0.4.v201005080501">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../SmartTeller9/frame_work/org.apache.commons.logging_1.0.4.v201005080501.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

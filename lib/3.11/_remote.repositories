@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Aug 29 10:58:41 CST 2017
+poi-3.11.jar>central=
+poi-3.11.pom>nexus-snapshots=
+poi-3.11.pom>central=
+poi-3.11.jar>nexus-snapshots=
+poi-3.11.pom>nexus-releases=
+poi-3.11.jar>nexus-releases=
