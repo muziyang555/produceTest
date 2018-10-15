@@ -22,7 +22,7 @@ public class Excl2Pdf {
 
 	public static void main(String[] args) throws DocumentException, IOException,BiffException {
 		Document document = new Document(PageSize.A4,0,0,50,0);
-		PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("C:\\Users\\liyangbd\\Desktop\\PdfTable.pdf"));
+		PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("C:\\Users\\liyangbd\\Desktop\\PdfTable1.pdf"));
 
 		//字体设置
         /*
@@ -32,11 +32,11 @@ public class Excl2Pdf {
 		//创建BaseFont对象，指明字体，编码方式,是否嵌入
 		BaseFont bf=BaseFont.createFont("C:\\Windows\\Fonts\\simkai.ttf", BaseFont.IDENTITY_H, false);
 		//创建Font对象，将基础字体对象，字体大小，字体风格
-		Font font=new Font(bf,13,Font.NORMAL);
+		Font font=new Font(bf,9,Font.NORMAL);
 		int rowNum = 0;
 		int colNum = 0;
 		try {
-			File file = new File("C:\\Users\\liyangbd\\Desktop\\2000001033463000000002_20280328_20280328.xls");
+			File file = new File("C:\\Users\\liyangbd\\Desktop\\2000001033463000000002_20280328_20280328.xls.xls");
 			Workbook workbook=Workbook.getWorkbook(file);
 
 			Sheet sheet=workbook.getSheet(0);
