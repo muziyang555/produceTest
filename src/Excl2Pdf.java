@@ -22,7 +22,7 @@ public class Excl2Pdf {
 
 	public static void main(String[] args) throws DocumentException, IOException,BiffException {
 		Document document = new Document(PageSize.A4,0,0,50,0);
-		PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("C:\\Users\\liyangbd\\Desktop\\PdfTable1.pdf"));
+		PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("C:\\Users\\liyangbd\\Desktop\\PdfTable.pdf"));
 
 		//字体设置
         /*
@@ -30,12 +30,14 @@ public class Excl2Pdf {
          * 找到文件后，打开属性，将文件名及所在路径作为字体名即可。
          */
 		//创建BaseFont对象，指明字体，编码方式,是否嵌入
-		BaseFont bf=BaseFont.createFont("C:\\Windows\\Fonts\\simkai.ttf", BaseFont.IDENTITY_H, false);
+		BaseFont bf1=BaseFont.createFont("C:\\Windows\\Fonts\\simkai.ttf", BaseFont.IDENTITY_H, false);
 		//创建Font对象，将基础字体对象，字体大小，字体风格
-		Font font=new Font(bf,9,Font.NORMAL);
+		Font font1=new Font(bf1,9,Font.NORMAL);
 
 		//TODO 字体由于服务器无字体文件，需要单独处理
-
+		BaseFont bf= BaseFont.createFont("STSongStd-Light", "UniGB-UCS2-H", BaseFont.NOT_EMBEDDED);
+		//创建Font对象，将基础字体对象，字体大小，字体风格
+		Font font=new Font(bf , 9 , Font.NORMAL);
 
 		int rowNum = 0;
 		int colNum = 0;

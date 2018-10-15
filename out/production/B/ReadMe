@@ -3,4 +3,9 @@ tmp.txt 保存临时文本文件，用于处理
 ReadxmlByDom 读取xml文件
 txtOutSame 文件去重
 Excl2Pdf  excl转pdf
-
+CheckEnName  中英文校验
+DataBase  数据库链接基础类(单独起作用)
+DataBaseII  数据库连接类(需要传参数)
+datatest    节假日顺延测试类
+DateBaseProperty  数据库参数
+DBKeytoDesc
