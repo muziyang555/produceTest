@@ -33,6 +33,10 @@ public class Excl2Pdf {
 		BaseFont bf=BaseFont.createFont("C:\\Windows\\Fonts\\simkai.ttf", BaseFont.IDENTITY_H, false);
 		//创建Font对象，将基础字体对象，字体大小，字体风格
 		Font font=new Font(bf,9,Font.NORMAL);
+
+		//TODO 字体由于服务器无字体文件，需要单独处理
+
+
 		int rowNum = 0;
 		int colNum = 0;
 		try {
